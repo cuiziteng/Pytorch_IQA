@@ -1,5 +1,5 @@
 ## Pytorch_IQA:
-Calculation PSNR/ SSIM/ LPIPS on pytorch.
+Calculate PSNR/ SSIM/ LPIPS on pytorch.
 
 ## Usage:
 ```
