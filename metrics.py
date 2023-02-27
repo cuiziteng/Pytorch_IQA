@@ -2,7 +2,7 @@
 Ziteng Cui
 cui@mi.t.u-tokyo.ac.jp
 '''
-
+from tqdm import tqdm
 import numpy as np
 import math
 import sys
@@ -59,7 +59,7 @@ def main():
     reference_paths = sys.argv[2]
     sumpsnr, sumssim, sumlpips = 0., 0., 0.
     N=0
-    for file in os.listdir(result_paths):
+    for file in tqdm(os.listdir(result_paths)):
         result_path = os.path.join(result_paths, file)
         reference_path = os.path.join(reference_paths, file)
         
